@@ -2,7 +2,13 @@
 + board loads "blank canvas"
 + centered, responsive, mobile, etc..
 
-
+.: document consists of 
+- body 
+- game
+- board
+- square
+	:sq1, sq2, sq3, sq4, sq5, sq6, sq7, sq8, sq9
+- name / input
 
 				|			|			
 				|			|			
@@ -21,15 +27,20 @@
 				|			|			
 				|			|			
 				|			|			
+'Required:'
+	PLAYER 1 (X)		 	 PLAYER 2 (O)    
+	  "Name"				    "Name"
 
-	PLAYER 1 (X)	TIES 	 PLAYER 2 (O)    
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+'Intermediate:'
+PLAYER 1 (X)	TIES 	 PLAYER 2 (O)    
 	  "Name"				    "Name"
 		0			 1			2
 
 
-
-Advanced: 
-	PLAYER (X)		TIES 	 COMPUTER(0)	"1Player"||"2Player" 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+'Advanced:'
+	PLAYER (X)		TIES 	 COMPUTER(O)	"1Player"||"2Player" 
 										    "LEVEL 1"||"LEVEL 2"
 
 
@@ -45,7 +56,11 @@ Once seclected it can't be selected again.
   O	| X	| O			
 		
 
-
+  1	| 2	| 3				
+ ---|---|---		
+  4	| 5	| 6			
+ ---|---|---		
+  7	| 8	| 9	
 
 ### Necessary features
 1. An interactive board which renders on page load.
