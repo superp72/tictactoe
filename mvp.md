@@ -1,3 +1,6 @@
+
+what does it look like as soon as you log on to the site?
+
 + page loads a gameboard 3 * 3 tiles - responsive design
 + board loads "blank canvas"
 + centered, responsive, mobile, etc..
@@ -8,7 +11,7 @@
 - board
 - square
 	:sq1, sq2, sq3, sq4, sq5, sq6, sq7, sq8, sq9
-- name / input
+- Player-text / input "name"
 
 				|			|			
 				|			|			
@@ -62,21 +65,15 @@ Once seclected it can't be selected again.
  ---|---|---		
   7	| 8	| 9	
 
+win=[[1,2,3],[4,5,6],[7,8,9],[1,4,7],[2,5,8],[3,6,9],[1,5,9],[3,5,7]]
+
 ### Necessary features
 1. An interactive board which renders on page load.
 
-
-
-
-
 2. A way for players to set their name.
-
 + needs to take an input and store it.
 
-
 3. A way for players to mark an empty space on their turn. Their turns must alternate. Ex: Player one places an 'x' and then player two places an 'o', followed by player one placing an 'x', etc.
-
-
 
 4. A player can't play on a square that has already been played.
 
