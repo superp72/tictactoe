@@ -67,6 +67,23 @@ Once seclected it can't be selected again.
 
 win=[[1,2,3],[4,5,6],[7,8,9],[1,4,7],[2,5,8],[3,6,9],[1,5,9],[3,5,7]]
 
+It is the end of Monday, even though it is Midday Tuesday:
+CSS
+Need solution for 1P||2P - but don't waste time - nice to have.
+Need to find a way to wrap everthing up as one, center it, and
+make it so eveything doesn't change/break when scrolled.
+Everything basically done.
+
+JS
+Function loads "X" - "O" - "X" and so on.
+"disable" not working.
+"X's" & "O's" - are not loading in the board.
+
+HTML
+Can receive a name, but doesn't have any functionality.
+Recieve two names start game
+
+
 Timeline:
 END OF MONDAY FINISH TIMELINE PLANNING.
 
