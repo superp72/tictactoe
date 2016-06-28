@@ -27,21 +27,16 @@
 	width: 90%;
 	padding: 10% 5%;
 	background-color: black;
-	font-family: helvetica;
-	font-size: 2em;
+	font-family: 'Playfair Display', serif;
+	font-size: 7em;
+	color: white;
 	/*font-size: 2em;*/
 
 }
 
 
-.pos {
-	/*color: gray;*/
-	background-color: white;
-	font-family: helvetica;
-	font-size: 2em;
 
 
-}
 .scoreboard {
 	/*color: gray;*/
 	font-family: 'Playfair Display', serif;
@@ -56,18 +51,25 @@
 
 }
 
+/*.input{
+	color: white;
+	background-color: black;
+	font-size: 74px;
+	margin:0 auto;
+*/
+
 .score{
 	/*color: gray;*/
 	font-family: 'Playfair Display', serif;
 	position: relative;
-/*	width: 90%;
-*/	/*display: inline-block;*/
+	/*width: 90%;*/
+	/*display: inline-block;*/
 	font-size: 5.5vw;
 	float: left;
 	width: 30%;
 	margin: 1.66%;
-/*	overflow: hidden;
-*/	text-align:center;
+	/*overflow: hidden;*/
+	text-align:center;
 }
 
 
