@@ -36,7 +36,7 @@ what does it look like as soon as you log on to the site?
 
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 'Intermediate:'
-PLAYER 1 (X)	TIES 	 PLAYER 2 (O)    
+	PLAYER 1 (X)	TIES 	 PLAYER 2 (O)    
 	  "Name"				    "Name"
 		0			 1			2
 
@@ -67,28 +67,31 @@ Once seclected it can't be selected again.
 
 win=[[1,2,3],[4,5,6],[7,8,9],[1,4,7],[2,5,8],[3,6,9],[1,5,9],[3,5,7]]
 
-### Necessary features
-1. An interactive board which renders on page load.
+Timeline:
+END OF MONDAY FINISH TIMELINE PLANNING.
 
-2. A way for players to set their name.
-+ needs to take an input and store it.
+### Necessary features
+1. An interactive board which renders on page load. 
+End Tuesday
+
+2. A way for players to set their name. 
+End Tuesday
 
 3. A way for players to mark an empty space on their turn. Their turns must alternate. Ex: Player one places an 'x' and then player two places an 'o', followed by player one placing an 'x', etc.
 
+
+function Start()
+
+var player = 1 
+function clickSquare()
+	document.getElement.... make it "X" & disable it.
+
+var player = 2
+	document.getElement.... make it "O" & disable it.
+
+
 4. A player can't play on a square that has already been played.
-
-
-
-
-
-
-
-
-
-
-
-
-
+End Wednesday
 
 
 
@@ -96,10 +99,18 @@ win=[[1,2,3],[4,5,6],[7,8,9],[1,4,7],[2,5,8],[3,6,9],[1,5,9],[3,5,7]]
 
 5. The game should end when there is a winner, or if the game is a tie.
 
+win = [[1,2,3],[4,5,6],[7,8,9],[1,4,7],[2,5,8],[3,6,9],[1,5,9],[3,5,7]]
+else = "draw/tie"
+
 6. The game should report the end state.
+gameArray = 9, the game is finished.
 
 7. A button on `game over` to **reset** the game back to initial state.
+Add reset button - I think that we will just go for clickEvent anywhere on the document as a "reset
+"
 8. A way to keep track of Player 1 vs. Player 2 wins.
+Scoreboard
+
 
 Additionally you should use the CSS skills that you've gained to ensure a reasonable amount of styling to keep your project presentable.
 
