@@ -30,13 +30,13 @@ function checkForWinner(){
 var win = [[1,2,3],[4,5,6],[7,8,9],[1,4,7],[2,5,8],[3,6,9],[1,5,9],[3,5,7]];
 var allTiles = document.getElementsByClassName("content")
 console.log(allTiles);
-for (var i = 0; i < win.length; i++) {
-	var posToCheck = win[i];
-	for (var i = 0; i < posToCheck.length; i++) {
-		console.log(allTiles[posToCheck[i]]);
-	};
-	// check the tiles at the positions from the current wins index
-}; 
+// for (var i = 0; i < win.length; i++) {
+// 	var posToCheck = win[i];
+// 	for (var i = 0; i < posToCheck.length; i++) {
+// 		console.log(allTiles[posToCheck[i]]);
+// 	};
+// 	// check the tiles at the positions from the current wins index
+// }; 
 }
 
 
