@@ -19,9 +19,13 @@ if (player ===1){
 
 	player += 1;
 	}
+<<<<<<< HEAD
 
 checkForWinner()
 
+=======
+checkForWinner()
+>>>>>>> master
 }
 
 function checkForWinner(){
