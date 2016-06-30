@@ -62,7 +62,10 @@ console.log(xArray, oArray);
 				var winArr = win[i];
 	  			if ( xArray.indexOf(winArr[0].toString()) != -1 && xArray.indexOf(winArr[1].toString()) != -1 && xArray.indexOf(winArr[2].toString()) != -1 ) {
 				winner = true; 
-				console.log('winner found');
+				alert('winner X found');
+			/*	else if (oArray.indexOf(winArr[0].toString()) != -1 && oArray.indexOf(winArr[1].toString()) != -1 && oArray.indexOf(winArr[2].toString()) != -1)
+					winner = true; 
+				console.log('winner O found'); */
 		} 
 	}
 
