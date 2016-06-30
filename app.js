@@ -31,33 +31,50 @@ function checkForWinner(){
 	// an array for X tiles
 	var xArray = [];
 	// an array for O tiles
+	var oArray = [];
 	var allTiles = document.getElementsByClassName("content");
 	console.log(allTiles);
 		for (var i = 0; i < 9; i++) {
 
 			// if allTiles[i].innerHTML === 'X'
+			if (allTiles[i].innerHTML === "X")
 			// 	push the allTiles[i].id.slice(3,4) into X array
+				xArray.push(allTiles[i].id.slice(3,4))
 			// else if innerhtml = 'O'
+			else if (allTiles[i].innerHTML === "O")
 			// 	push the allTiles[i].id.slice(3,4) into O array
-			console.log(allTiles[i].id.slice(3,4));
+				oArray.push(allTiles[i].id.slice(3,4))
 		
 	}
-	checkXandO(xArray, oArray);
-	//send our two arrays to a function that checks the arrays vs the master win array
+checkXandO(xArray, oArray);
+// 	//send our two arrays to a function that checks the arrays vs the master win array
+
 }
 
 function checkXandO (xArray, oArray){
-	console.log(xArray, oArray);
-//var winner = false;
-var win = [[1,2,3],[4,5,6],[7,8,9],[1,4,7],[2,5,8],[3,6,9],[1,5,9],[3,5,7]];
-//for loop over the win array, grab each index ie: index 0 : 1,2,3
-//check X array to see if it contains 1,2,3
-//1 ,2 ,3
-//if xArray.indexOf(winArr[0]) && xArray.indexOf(winArr[1]) && xArray.indexOf(winArr[2]) && 
-//if there is a match, winner = true
-//return winning array, either X or O
-//if xArray.length + oArray.length == 9  && !winner alert its a draw
+console.log(xArray, oArray);
+		var winner = false;
+
+		var win = [[1,2,3],[4,5,6],[7,8,9],[1,4,7],[2,5,8],[3,6,9],[1,5,9],[3,5,7]];
+
+// // //for loop over the win array, grab each index ie: index 0 : 1,2,3
+			for (var i = 0; i < win.length; i++) {
+				var winArr = win[i];
+	  			if ( xArray.indexOf(winArr[0].toString()) != -1 && xArray.indexOf(winArr[1].toString()) != -1 && xArray.indexOf(winArr[2].toString()) != -1 ) {
+				winner = true; 
+				console.log('winner found');
+		} 
+	}
+
 }
+
+// //check X array to see if it contains 1,2,3
+// //1 ,2 ,3
+// //if xArray.indexOf(winArr[0]) && xArray.indexOf(winArr[1]) && xArray.indexOf(winArr[2]) && 
+// //if there is a match, winner = true
+// //return winning array, either X or O
+// //if xArray.length + oArray.length == 9  && !winner alert its a draw
+// }
 
 
 // console.log(win[i]); undefined
@@ -77,6 +94,6 @@ var win = [[1,2,3],[4,5,6],[7,8,9],[1,4,7],[2,5,8],[3,6,9],[1,5,9],[3,5,7]];
 // check innerHTML of tiles at those three positions
 // if they are all the same there is a winner
 
-
+ //|| oArray.indexOf(win[1]) && oArray.indexOf(win[2])) && oArray.indexOfwin[3])
 
 // loop over array 
