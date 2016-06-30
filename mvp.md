@@ -112,7 +112,11 @@ var player = 2
 4. A player can't play on a square that has already been played.
 End Wednesday
 
+<<<<<<< HEAD
+/adding this for ghpages
+=======
 something for git 
+>>>>>>> master
 
 ### Intermediate features
 
