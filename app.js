@@ -6,13 +6,15 @@ if (player ===1){
 	document.getElementById(pos).innerHTML = "X";
 	document.getElementById(pos).removeAttribute('onClick');
 	 /*console.log((pos) + " X"); */
+
 	player -= 1;
 
 	}else {
 	document.getElementById(pos).innerHTML = "O";
   	document.getElementById(pos).removeAttribute('onClick');
- 	/* console.log((pos) + " O"); */
+ 	//console.log((pos) + " O");
 	player += 1;
+
 	}
  checkForWinner()
 }
@@ -63,8 +65,7 @@ console.log(xArray, oArray);
 }
 }
 	
-
-	function clickName(){
+function clickName(){
 	var player1 = document.getElementById('p1').value;	
 	document.getElementById('XP').innerHTML = player1 + ' (X)';
 }
@@ -72,6 +73,7 @@ console.log(xArray, oArray);
 function clickName2(){
 	var player2 = document.getElementById('p2').value;	
 	document.getElementById('OP').innerHTML = player2 + ' (O)';
+
 
 }
 // var content = document.getElementsByClassName("content").innerHTML;
