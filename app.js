@@ -19,7 +19,6 @@ if (player ===1){
  checkForWinner()
 }
 function checkForWinner(){
-	
 	var xArray = []; // an array for X tiles
 	var oArray = [];// an array for O tiles
 	var allTiles = document.getElementsByClassName("content");
@@ -61,7 +60,6 @@ function checkXandO (xArray, oArray){
 					alert('The result is a "Tie"'); 
 					return
 					} 
-
 }
 }
 	
@@ -73,8 +71,6 @@ function clickName(){
 function clickName2(){
 	var player2 = document.getElementById('p2').value;	
 	document.getElementById('OP').innerHTML = player2 + ' (O)';
-
-
 }
 // var content = document.getElementsByClassName("content").innerHTML;
 function reset(){
