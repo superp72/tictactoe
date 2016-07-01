@@ -96,6 +96,21 @@ End Tuesday
 2. A way for players to set their name. 
 End Tuesday
 
+document.getElementById("p1").placeholder = "Type name here..";
+
+var x = document.getElementById("p1") //.placeholder;
+	if (x == true ){
+	document.getElementById("p1") = 'x' +' (X)'
+
+var o = document.getElementById("p2") //.placeholder;
+	if (o == true ){
+	document.getElementById("p1") = 'o' +' (O)'
+
+
+
+
+}
+
 3. A way for players to mark an empty space on their turn. Their turns must alternate. Ex: Player one places an 'x' and then player two places an 'o', followed by player one placing an 'x', etc.
 
 
@@ -112,11 +127,10 @@ var player = 2
 4. A player can't play on a square that has already been played.
 End Wednesday
 
-<<<<<<< HEAD
-/adding this for ghpages
-=======
+adding this for ghpages
+
 something for git 
->>>>>>> master
+
 
 ### Intermediate features
 
@@ -131,6 +145,8 @@ gameArray = 9, the game is finished.
 7. A button on `game over` to **reset** the game back to initial state.
 Add reset button - I think that we will just go for clickEvent anywhere on the document as a "reset
 "
+**** RESET BUTTON = onclick body ...." if possible"
+
 8. A way to keep track of Player 1 vs. Player 2 wins.
 Scoreboard
 
