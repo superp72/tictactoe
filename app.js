@@ -27,20 +27,16 @@ function checkForWinner(){
 		for (var i = 0; i < 9; i++) {
 			if (allTiles[i].innerHTML === "X"){ // if allTiles[i].innerHTML === 'X'
 				xArray.push(allTiles[i].id.slice(3,4))// 	push the allTiles[i].id.slice(3,4) into X array
-				// grab player 1 set its color to blue
-				// document.getElementById('XP').style.color = blue;
-				// document.getElementById('OP').style.color = black; 
-				// // grab player 2 set color to black
-			//vice versa for 
+				document.getElementById('XP').style.color = "black";
+				document.getElementById('OP').style.color = "blue"; 
 			}else if (allTiles[i].innerHTML === "O"){// else if innerhtml = 'O'
 				oArray.push(allTiles[i].id.slice(3,4))// 	push the allTiles[i].id.slice(3,4) into O array
-	// document.getElementById('XP').style.color = black;
-	// document.getElementById('OP').style.color = blue; 
+				document.getElementById('XP').style.color = "blue";
+				document.getElementById('OP').style.color = "black"; 
 		}
 	}
 
-checkXandO(xArray, oArray);//send our two arrays to a function that checks the arrays vs the master win array
-
+checkXandO(xArray, oArray); //check for win > sends x & o arrays to check win funtion.
 }
 
 function checkXandO (xArray, oArray){
@@ -52,45 +48,47 @@ console.log(xArray, oArray);
 				var winArr = win[i];
 		  			if ( xArray.indexOf(winArr[0].toString()) != -1 && xArray.indexOf(winArr[1].toString()) != -1 && xArray.indexOf(winArr[2].toString()) != -1 ) {
 					winner = true;
-		
-					alert('winner X found') /* + document.getElementById('score-X') +1 */ ;
+					/* + document.getElementById('score-X') +1 //this was for keeping score */
+					alert('The Winner is X!!!!');
 					
 					}else if ( oArray.indexOf(winArr[0].toString()) != -1 && oArray.indexOf(winArr[1].toString()) != -1 && oArray.indexOf(winArr[2].toString()) != -1){
 					winner = true;
-				
-					alert('winner O found')	/*document.getElementById('score-O') + 1*/ ;
+					/*document.getElementById('score-O') + 1  //this was for keeping score*/
+					alert('The Winner is O!!!!');
 					}else if(xArray.length + oArray.length == 9 && !winner) { 
-						
-					  alert('tie') /* + document.getElementById('score-Tie') + 1*/
+					/* + document.getElementById('score-Tie') + 1*/
+					alert('The result is a "Tie"'); 
 					} 
 
 }
 }
-
 	
-function reset(){
-			var player1 = document.getElementById('p1').innerHTML = "player X";
-			var player2 = document.getElementById('p2').innerHTML = "player Y";
-			var content = document.getElementsByClassName("content")
-			for (var i = 0; i < content.length; i++){
-				content.innerHTML =''
-			// do the same with player 2
-			// grab all tiles and loop over setting inner html = ''
-	}
-}
 
-function clickName(){
-	var player1 = document.getElementById('p1').value;
-	
+	function clickName(){
+	var player1 = document.getElementById('p1').value;	
 	document.getElementById('XP').innerHTML = player1 + ' (X)';
 }
 
 function clickName2(){
-	
-	var player2 = document.getElementById('p2').value;
-	
+	var player2 = document.getElementById('p2').value;	
 	document.getElementById('OP').innerHTML = player2 + ' (O)';
+
 }
+// var content = document.getElementsByClassName("content").innerHTML;
 
-
+function reset(){
+	var content = document.getElementsByClassName("content").value;
+							// var player1 = document.getElementById('p1').innerHTML = "player X";
+							// var player2 = document.getElementById('p2').innerHTML = "player Y";
+							// var content = document.getElementsByClassName("content").innerHTML;
+							// document.getElementById(pos).innerHTML = ""
+			for (var i = 0; i < 9; i++){
+			if (document.getElementsByClassName("content").innerHTML == "X" || "" || "O") /* || "O") */{
+							// 	console.log(content);
+				content.innerHTML == "";
+							// do the same with player 2
+							// grab all tiles and loop over setting inner html = ''
+	}
+	}
+}
 
