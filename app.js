@@ -49,22 +49,23 @@ function checkXandO (xArray, oArray){
 				var winArr = win[i];
 		  			if ( xArray.indexOf(winArr[0].toString()) != -1 && xArray.indexOf(winArr[1].toString()) != -1 && xArray.indexOf(winArr[2].toString()) != -1 ) {
 					winner = true;
-					/* + document.getElementById('score-X') +1 //this was for keeping score */
+					/* + document.getElementById('score-X') +1 this was for keeping score */
 					alert('The Winner is X!!!!');
 					
 					}else if ( oArray.indexOf(winArr[0].toString()) != -1 && oArray.indexOf(winArr[1].toString()) != -1 && oArray.indexOf(winArr[2].toString()) != -1){
 					winner = true;
-					/*document.getElementById('score-O') + 1  //this was for keeping score*/
+					/*document.getElementById('score-O') + 1  this was for keeping score*/
 					alert('The Winner is O!!!!');
 					}else if(xArray.length + oArray.length == 9 && !winner) { 
 					/* + document.getElementById('score-Tie') + 1*/
 					alert('The result is a "Tie"'); 
+					return
 					} 
 
 }
 }
 	
-function clickName(){ß
+function clickName(){
 	var player1 = document.getElementById('p1').value;	
 	document.getElementById('XP').innerHTML = player1 + ' (X)';
 }
