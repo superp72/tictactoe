@@ -41,7 +41,7 @@ checkXandO(xArray, oArray); //check for win > sends x & o arrays to check win fu
 }
 
 function checkXandO (xArray, oArray){
-console.log(xArray, oArray);
+//console.log(xArray, oArray);
 		var winner = false;
 		var win = [[1,2,3],[4,5,6],[7,8,9],[1,4,7],[2,5,8],[3,6,9],[1,5,9],[3,5,7]];
 
@@ -64,7 +64,7 @@ console.log(xArray, oArray);
 }
 }
 	
-function clickName(){
+function clickName(){ß
 	var player1 = document.getElementById('p1').value;	
 	document.getElementById('XP').innerHTML = player1 + ' (X)';
 }
@@ -76,7 +76,6 @@ function clickName2(){
 
 }
 // var content = document.getElementsByClassName("content").innerHTML;
-
 function reset(){
 	var content = document.getElementsByClassName("content").value;
 							// var player1 = document.getElementById('p1').innerHTML = "player X";
